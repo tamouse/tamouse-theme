@@ -1,0 +1,18 @@
+<header class="site-header" role="banner">
+  <div class="hide-on-phone">
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="navbar-item brand"><a href="{{ "/" | absolute_url }}">{{site.title}}</a></div>
+        <div class="navbar-item link"><a href="{{ "about" | relative_url }}">About</a></div>
+        <div class="navbar-item link"><a href="{{ "style-guide" | relative_url }}">Style</a></div>
+      </nav>
+    </div>
+  </div>
+  <div class="show-on-phone">
+    <h3 class="text-center"><a href="{{ "/" | absolute_url }}">{{site.title}}</a></h3>
+    <div class="button-bar">
+      <a href="{{ 'about' | relative_url }}" class="button-bar-item btn btn-primary">About</a>
+      <a href="{{ 'style-guide' | relative_url }}" class="button-bar-item btn btn-primary">Style</a>
+    </div>
+  </div>
+</header>

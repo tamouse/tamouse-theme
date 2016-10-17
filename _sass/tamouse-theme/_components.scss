@@ -1,0 +1,184 @@
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  path {
+    fill: $brandMediumAccent;
+  }
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  display: block;
+  padding: 1.2em;
+  background: $brandDarkAccent;
+}
+
+.btn-default,
+.btn-default:visited,
+.btn-default:hover,
+.btn-default:active {
+  @include default();
+  a, a:visited, a:hover, a:active {
+    @include default();
+  }
+}
+
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active {
+  @include primary();
+  a, a:visited, a:hover, a:active {
+    @include primary();
+  }
+}
+
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:hover,
+.btn-secondary:active {
+  @include secondary();
+  a, a:visited, a:hover, a:active {
+    @include secondary();
+  }
+}
+
+/**
+ * Alerts
+ */
+.alert {
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.alert-default {
+  @include default();
+}
+
+.alert-primary {
+  @include primary();
+}
+
+.alert-secondary {
+  @include secondary();
+}
+
+.alert-warning {
+  @include warning();
+}
+
+.alert-danger {
+  @include danger();
+}
+
+/**
+ * Boxes
+ */
+
+.box {
+  border: 1px solid $brandMediumAccent;
+  padding: 10px;
+}
+
+/**
+ * Text helpers
+ */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/**
+ * Display for certain device widths
+ */
+.hide-on-phone {
+  display: none;
+  @media screen and (min-width: $phoneWidth) {
+    display: inherit;
+  }
+}
+.show-on-phone {
+  display: inherit;
+  @media screen and (min-width: $phoneWidth){
+    display: none;
+  }
+}
+.hide-on-tablet {
+  display: none;
+  @media screen and (min-width: $desktopWidth){
+    display: inherit;
+  }
+}
+.show-on-tablet {
+  display: none;
+  @media screen and (min-width: $tabletWidth) {
+    display: inherit;
+  }
+  @media screen and (min-width: $desktopWidth) {
+    display: none;
+  }
+}
+.hide-on-desktop {
+  display: inherit;
+  @media screen and (min-width: $desktopWidth) {
+    display: none;
+  }
+}
+.show-on-desktop {
+  display: none;
+  @media screen and (min-width: $desktopWidth) {
+    display: inherit;
+  }
+}
+
+/**
+ * flex
+ */
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-container {
+  @extend .flex-row-container;
+  flex-direction: column;
+}
+.flex-item, .flex-row-item, .flex-column-item {
+  flex-grow: 1;
+}
+
+
+/**
+ * Menus
+ */
+.vertical-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.horizontal-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline;
+  }
+}

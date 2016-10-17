@@ -1,0 +1,71 @@
+
+//Standard Clearfix mixin
+@mixin clearfix {
+  &:before,&:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//Standard Clearfix class (sure, we can have both :) )
+.clearfix {
+  @include clearfix;
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+// Heading Sizers
+@mixin size($font_factor, $margin_factor) {
+  margin: $margin_factor 0;
+  font-size: $baseFontSize * $font_factor;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+
+// Brand colour mixins
+
+@mixin default() {
+  background-color: $brandDarkAccent;
+  color: $brandForeground;
+  border-color: lighten($brandDarkAccent, 10%);
+}
+
+@mixin primary() {
+  background-color: $brandKeyAccent;
+  color: $brandBackground;
+  border-color: lighten($brandKeyAccent, 10%);
+}
+
+@mixin secondary() {
+  background-color: darken($brandKeyAccent, 40%);
+  color: $brandBackground;
+  border-color: lighten($brandKeyAccent, 70%);
+}
+
+@mixin danger() {
+  background-color: #ffaaaa;
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+@mixin warning() {
+  background-color: #ffc78f;
+  color: #ff7700;
+  border-color: #ff7700;
+}

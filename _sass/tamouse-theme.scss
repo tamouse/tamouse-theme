@@ -1,0 +1,37 @@
+// Define defaults for each variable.
+//
+//$normalFontStack: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//$baseFontSize:   16px !default;
+//$baseFontWeight: 400 !default;
+//$small-font-size:  $baseFontSize * 0.875 !default;
+//$baseLineHeight: 1.5 !default;
+//
+//$spacingUnit:     30px !default;
+//
+//$text-color:       #111 !default;
+//$background-color: #fdfdfd !default;
+//$brand-color:      #2a7ae2 !default;
+//
+//$grey-color:       #828282 !default;
+//$brandDarkAccent: lighten($grey-color, 40%) !default;
+//$grey-color-dark:  darken($grey-color, 25%) !default;
+//
+//// Width of the content area
+//$variableContentWidth:    800px !default;
+//
+//$on-palm:          600px !default;
+//$on-laptop:        800px !default;
+
+
+
+// Import partials.
+@import
+  "tamouse-theme/settings",
+  "tamouse-theme/tools",
+  "tamouse-theme/general",
+  "tamouse-theme/base",
+  "tamouse-theme/objects",
+  "tamouse-theme/components",
+  "tamouse-theme/overrides",
+  "tamouse-theme/syntax-highlighting"
+;
