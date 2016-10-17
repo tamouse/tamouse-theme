@@ -4,11 +4,11 @@
 
 /* COLOURS */
 /* Duplicating https://color.adobe.com/Quiet-Cry-color-theme-124171/ */
-$brandBackground: #1C1D21;
-$brandForeground: #EEEFF7;
-$brandKeyAccent: #92cdcf;
-$brandMediumAccent: #445878;
-$brandDarkAccent: #31353D;
+$brandBackground: #1C1D21 !default;
+$brandForeground: #EEEFF7 !default;
+$brandKeyAccent: #92cdcf !default;
+$brandMediumAccent: #445878 !default;
+$brandDarkAccent: #31353D !default;
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Eczar:400,700|Space+Mono:400,400i,700,700i|Tillana|Work+Sans:400,700&subset=latin-ext');
