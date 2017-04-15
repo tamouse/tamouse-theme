@@ -12,29 +12,29 @@ $brandDarkAccent: #31353D !default;
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Eczar:400,700|Space+Mono:400,400i,700,700i|Tillana|Work+Sans:400,700&subset=latin-ext');
-$normalFontStack: Eczar, serif;
-$headerFontStack: 'Work Sans', serif;
-$buttonFontStack: 'Work Sans', serif;
-$monoFontStack: 'Space Mono', monospace;
-$cursiveFontStack: Tillana, cursive;
+$normalFontStack: Eczar, serif !default;
+$headerFontStack: 'Work Sans', serif !default;
+$buttonFontStack: 'Work Sans', serif !default;
+$monoFontStack: 'Space Mono', monospace !default;
+$cursiveFontStack: Tillana, cursive !default;
 
 
-$baseFontWeight: 400;
-$boldFontWeight: 700;
-$baseFontSize: 1em;
-$baseLineHeight: 1.6em;
-$monoFontSize: $baseFontSize * 0.9;
-$smallFontSize: 85%;
+$baseFontWeight: 400 !default;
+$boldFontWeight: 700 !default;
+$baseFontSize: 1em !default;
+$baseLineHeight: 1.6em !default;
+$monoFontSize: $baseFontSize * 0.9 !default;
+$smallFontSize: 85% !default;
 
 /* LAYOUT */
-$phoneWidth: 425px;
-$tabletWidth: 768px;
-$desktopWidth: 1024px;
-$spacingUnit: 2em;
-$tinySpacingUnit: 5px;
-$variableContentWidth: 100vw;
-$fixedContentWidth: 960px;
+$phoneWidth: 425px !default;
+$tabletWidth: 768px !default;
+$desktopWidth: 1024px !default;
+$spacingUnit: 2em !default;
+$tinySpacingUnit: 5px !default;
+$variableContentWidth: 100vw !default;
+$fixedContentWidth: 960px !default;
 
 
 /* NAVBAR */
-$navbarHeight: 50px;
+$navbarHeight: 50px !default;
